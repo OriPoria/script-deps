@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "script-deps"
+version = "0.0.1"
+description = "Python tool designed to streamline the process of creating lightweight, deployable packages for Python scripts. "
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+authors = [
+    { name = "Ori Poria", email = "oriporia@gmail.com" }
+]
+dependencies = [
+    "setuptools>=75.6.0",
+    "pytest>=8.3.4"
+]
+license = { text = "MIT" }
+
+
+[tool.hatch.build]
+include = ["src/**", "README.md", "LICENSE"]
+exclude = ["__pycache__", "*.pyc", "*.pyo", "*.pyd", "dist", "build"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "src"
+]
+
+[project.scripts]
+script-deps = "script_deps:main"

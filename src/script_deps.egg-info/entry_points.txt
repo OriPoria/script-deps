@@ -1,0 +1,2 @@
+[console_scripts]
+script-deps = script_deps:main

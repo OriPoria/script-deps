@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/script_deps/main.py
+src/script_deps.egg-info/PKG-INFO
+src/script_deps.egg-info/SOURCES.txt
+src/script_deps.egg-info/dependency_links.txt
+src/script_deps.egg-info/entry_points.txt
+src/script_deps.egg-info/requires.txt
+src/script_deps.egg-info/top_level.txt
